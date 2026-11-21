@@ -194,7 +194,7 @@ export const LockerSimulator: React.FC<LockerSimulatorProps> = ({
               Retailer Command Console
             </h4>
             <p className="text-sm text-slate-300 mb-6">
-              Simulate actions executed by 1000+ mobile store owners across India:
+              Simulate actions executed by 10000+ mobile store owners across India:
             </p>
 
             {/* 6 Control Action Buttons Grid */}

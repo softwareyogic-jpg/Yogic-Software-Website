@@ -10,13 +10,13 @@ export const Hero: React.FC = () => {
     >
       {/* Background Subtle Grid & Gradient Atmosphere */}
       <div className="absolute inset-0 bg-grid-subtle pointer-events-none opacity-70" />
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
+
           {/* Left Column: Confident Typography & Call to Actions */}
           <div className="lg:col-span-7 text-center lg:text-left flex flex-col items-center lg:items-start">
-            
+
             {/* Trust Eyebrow Badge */}
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white shadow-sm border border-amber-gold/30 text-deep-navy mb-6 group cursor-default">
               <span className="flex h-2 w-2 relative">
@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-sunrise-orange" />
               </span>
               <span className="text-xs sm:text-sm font-semibold tracking-wide text-brand-navy">
-                Since 2021 &middot; Trusted by Retailers Across India
+                Since 2021 &middot; Trusted by Retailers Across World
               </span>
               <Sparkles className="w-3.5 h-3.5 text-amber-gold" />
             </div>

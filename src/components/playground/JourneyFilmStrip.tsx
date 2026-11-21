@@ -37,7 +37,7 @@ const TIMELINE_FRAMES = [
   {
     year: '2024',
     tag: 'NATIONWIDE SCALE',
-    title: '1000+ Retail Partners Across 28+ Indian States',
+    title: '10000+ Retail Partners Across 28+ Indian States',
     description:
       'Establishing on-ground sales and support teams in Tier-1, Tier-2, and Tier-3 cities with 24/7 AI-powered assistance.',
     icon: MapPin,

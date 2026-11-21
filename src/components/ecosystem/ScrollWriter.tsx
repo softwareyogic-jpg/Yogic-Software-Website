@@ -16,7 +16,7 @@ const HIGHLIGHT_TERMS = [
   'Peace of mind',
   'SOS alerts',
   'remote wipe',
-  '1000+',
+  '10000+',
   '28+',
   '24/7',
   'Connecting Spirit with Technology',

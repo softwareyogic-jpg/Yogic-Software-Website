@@ -26,7 +26,7 @@ export const ChairmanMessage: React.FC = () => {
     {
       icon: ShieldCheck,
       title: 'Nationwide Trust',
-      description: 'Guiding 1000+ retail partners across 28+ Indian states with integrity.',
+      description: 'Guiding 10000+ retail partners across 28+ Indian states with integrity.',
       badge: 'Pan-India Scale'
     }
   ];

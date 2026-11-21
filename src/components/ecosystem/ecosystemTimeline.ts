@@ -183,11 +183,11 @@ export const USP_STAGES = [
     eyebrow: 'WHY YOGIC',
     headline: 'Built on trust. Backed by people.',
     lines: [
-      '1000+ retail partners. 28+ Indian states. 24/7 expert and AI-powered support.',
+      '10000+ retail partners. 28+ Indian states. 24/7 expert and AI-powered support.',
     ],
     closingItalic: 'Connecting Spirit with Technology.',
     chips: [
-      '1000+ Retail Partners',
+      '10000+ Retail Partners',
       '28+ States',
       '24/7 Support',
       'Est. 2021',

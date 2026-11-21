@@ -6,7 +6,7 @@ export const Milestones: React.FC = () => {
   // VERIFY: 99% client satisfaction and milestone metrics
   const stats = [
     { value: '2021', label: 'Year Founded', desc: '5+ years of steadfast digital trust & organic innovation' },
-    { value: '1000+', label: 'Retail Partners', desc: 'Active store networks onboarded across India' },
+    { value: '10000+', label: 'Retail Partners', desc: 'Active store networks onboarded across India' },
     { value: '99%', label: 'Client Satisfaction', desc: 'Consistent renewal & positive service feedback' },
     { value: '28+', label: 'Indian States', desc: 'Nationwide footprint with local distributor support' },
   ];

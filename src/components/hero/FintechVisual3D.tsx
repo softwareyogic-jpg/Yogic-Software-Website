@@ -198,7 +198,7 @@ export const FintechVisual3D: React.FC = () => {
             <span className="text-slate-600 font-mono ml-0.5">5.0</span>
           </div>
           <div className="font-heading font-extrabold text-xs text-deep-navy">
-            Trusted by 1000+ Retailers
+            Trusted by 10000+ Retailers
           </div>
           <div className="text-[10px] text-slate-500 font-medium">
             Across 28+ Indian States &bull; Est. 2021

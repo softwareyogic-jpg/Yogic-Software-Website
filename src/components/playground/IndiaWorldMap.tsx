@@ -7,7 +7,7 @@ interface IndiaWorldMapProps {
 }
 
 const GLOBAL_NATIONS = [
-  { name: 'India (HQ - Kolkata Airport)', flag: '/assets/flags/in.png', partners: '1000+ Stores across 28+ States' },
+  { name: 'India (HQ - Kolkata Airport)', flag: '/assets/flags/in.png', partners: '10000+ Stores across 28+ States' },
   { name: 'Bangladesh', flag: '/assets/flags/bd.png', partners: 'Active Retail Network' },
   { name: 'Mexico', flag: '/assets/flags/mx.png', partners: 'LATAM FinTech Hub' },
   { name: 'Ecuador', flag: '/assets/flags/ec.png', partners: 'Retail Partner Belt' },
@@ -91,7 +91,7 @@ export const IndiaWorldMap: React.FC<IndiaWorldMapProps> = ({ onComplete }) => {
 
           <div className="flex items-center gap-2 sm:gap-3 text-xs font-mono">
             <div className="px-3 py-1.5 rounded-xl bg-white/10 text-amber-gold font-bold border border-amber-gold/30">
-              1000+ Retail Partners
+              10000+ Retail Partners
             </div>
             <div className="px-3 py-1.5 rounded-xl bg-white/10 text-sunrise-orange font-bold border border-sunrise-orange/30">
               28+ States

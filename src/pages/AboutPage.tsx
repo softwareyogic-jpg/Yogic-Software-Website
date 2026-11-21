@@ -83,7 +83,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
 
   const whyChoosePoints = [
     '5 years of experience (since 2021) in EMI management and device security',
-    'Proven network of 1000+ retail partners across India',
+    'Proven network of 10000+ retail partners across India',
     '99% client satisfaction with consistent renewals',
     '24/7 expert and AI-powered support hotlines',
     'Nationwide on-ground sales and service network in 28+ states',
@@ -102,8 +102,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({
     {
       year: '2022 - 2023',
       title: 'Nationwide Expansion & Flagship Launch',
-      desc: 'Launched Yogic Astra Shakti; scaled rapidly across 28+ Indian states with 1000+ retailer partners adopting the finance locker.',
-      highlight: '1000+ Retailer Milestone',
+      desc: 'Launched Yogic Astra Shakti; scaled rapidly across 28+ Indian states with 10000+ retailer partners adopting the finance locker.',
+      highlight: '10000+ Retailer Milestone',
     },
     {
       year: '2024',
@@ -112,7 +112,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
       highlight: 'Multi-Product Diversification',
     },
     {
-      year: '2025 - 2026',
+      year: '2023 - 2026',
       title: 'Global Footprint & Full 9-Product Ecosystem',
       desc: 'Extended reach across 9 international countries including Bangladesh, Mexico, Ecuador, Spain, UAE, Uganda, Philippines, and Venezuela.',
       highlight: 'Global Tier-1 Scale',
@@ -244,11 +244,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           MAIN PAGE CONTENT (MODERN SAAS BENTO WITH IMAGERY & ANIMATION)
           ========================================================================= */}
       <main className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-16 sm:space-y-24">
-        
+
         {/* 1. HERO BANNER: Split Layout with 3D Ecosystem Graphic */}
         <div className="relative rounded-3xl bg-gradient-to-br from-[#0B2A5B] via-[#0A4B9E] to-royal-blue text-white p-8 sm:p-12 md:p-16 overflow-hidden shadow-2xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            
+
             {/* Left Content Column */}
             <div className="lg:col-span-7 relative z-10">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-bold text-amber-gold mb-6 shadow-inner">
@@ -285,7 +285,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 flex items-center justify-center animate-float-slow">
                 {/* Subtle ambient radiant glow behind the logo */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-royal-blue/30 via-transparent to-amber-gold/25 blur-3xl pointer-events-none" />
-                
+
                 {/* Pure Clean Logo Only - No text, no box borders */}
                 <img
                   src="/assets/yogic_emblem.png"
@@ -301,7 +301,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
         {/* 2. PHILOSOPHY SECTION (Bento with Visual Fusion Image Card) */}
         <div className="p-8 sm:p-12 rounded-3xl bg-white/95 backdrop-blur-md border border-amber-gold/30 shadow-md">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
+
             <div className="lg:col-span-7">
               <span className="text-xs font-black tracking-widest text-sunrise-orange uppercase block mb-2">
                 Our Guiding Philosophy
@@ -341,7 +341,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
         {/* 3. WHO WE ARE (With Country Flags & On-Ground Operations Visual) */}
         <div className="p-8 sm:p-12 rounded-3xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-sm">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            
+
             <div className="lg:col-span-7">
               <span className="text-xs font-black tracking-widest text-royal-blue uppercase block mb-2">
                 Background &amp; Scale
@@ -351,7 +351,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               </h2>
               <div className="mt-5 space-y-4 text-base sm:text-lg text-slate-600 leading-relaxed">
                 <p>
-                  Yogic Software was founded in 2021 with a clear observation: the mobile retail and consumer finance industry needed smarter, more reliable ways to protect devices and manage EMI-based sales. What began as a focused idea has, in just five years, grown into a trusted technology partner for <strong>1000+ retail partners across 28+ Indian states</strong>, with a presence in international markets including <strong>Bangladesh, Mexico, Ecuador, Spain, UAE, Uganda, the Philippines and Venezuela</strong>.
+                  Yogic Software was founded in 2021 with a clear observation: the mobile retail and consumer finance industry needed smarter, more reliable ways to protect devices and manage EMI-based sales. What began as a focused idea has, in just five years, grown into a trusted technology partner for <strong>10000+ retail partners across 28+ Indian states</strong>, with a presence in international markets including <strong>Bangladesh, Mexico, Ecuador, Spain, UAE, Uganda, the Philippines and Venezuela</strong>.
                 </p>
                 <p>
                   Our team of developers, security specialists and field professionals works closely with retailers every day. We listen to real feedback from the market and turn it into better products, faster updates and stronger support.
@@ -390,7 +390,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
 
               <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
                 <span>Active Retail Partners</span>
-                <span className="font-heading font-black text-amber-gold">1,000+ Stores</span>
+                <span className="font-heading font-black text-amber-gold">10,000+ Stores</span>
               </div>
             </div>
 
@@ -460,7 +460,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
+
             {/* Pillar 1: Finance Locker & EMI Management */}
             <div className="p-7 rounded-3xl bg-gradient-to-b from-blue-50/80 to-white border border-royal-blue/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
               <div>
@@ -627,7 +627,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               </div>
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-amber-gold text-xs font-mono">
                 <Star className="w-3.5 h-3.5 fill-amber-gold" />
-                <span>5.0 Rated by 1000+ Partners</span>
+                <span>5.0 Rated by 10000+ Partners</span>
               </div>
             </div>
 
@@ -650,7 +650,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
         {/* 9. MESSAGE OF COMMITMENT (Featuring Subrata Mukherjee Photo) */}
         <div className="p-8 sm:p-12 rounded-3xl bg-white border border-amber-gold/40 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
+
             {/* Left: Clean Executive Portrait */}
             <div className="lg:col-span-4 flex flex-col items-center text-center">
               <div className="w-44 h-52 sm:w-48 sm:h-56 rounded-3xl p-2 bg-gradient-to-b from-white to-slate-100 border-2 border-amber-gold/50 shadow-xl overflow-hidden">

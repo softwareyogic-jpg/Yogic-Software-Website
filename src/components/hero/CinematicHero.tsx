@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { ArrowRight, Play, ChevronDown } from 'lucide-react';
+import { ArrowRight, Play, ChevronDown, Sparkles } from 'lucide-react';
 import { VideoFallbackCanvas } from './VideoFallbackCanvas';
 import { StoryReelModal } from './StoryReelModal';
 import { FloatingProductCards } from './FloatingProductCards';
@@ -142,8 +142,9 @@ export const CinematicHero: React.FC<CinematicHeroProps> = ({
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 border border-amber-gold/40 backdrop-blur-xl shadow-lg w-fit mb-6">
               <span className="w-2 h-2 rounded-full bg-sunrise-orange animate-ping" />
               <span className="text-xs sm:text-sm font-sans font-semibold text-amber-gold tracking-wide">
-                Since 2021 · Trusted by Retailers Across India
+                Since 2021 &middot; Trusted by Retailers Across World
               </span>
+              <Sparkles className="w-3.5 h-3.5 text-amber-gold" />
             </div>
 
             {/* Kinetic Word-by-Word H1 Headline */}
@@ -232,7 +233,7 @@ export const CinematicHero: React.FC<CinematicHeroProps> = ({
           {/* Bottom Right: Count-Up Stat Chips */}
           <div className="flex items-center gap-2 sm:gap-3 text-xs font-mono">
             <div className="px-3 py-1 rounded-xl bg-white/5 border border-white/15 backdrop-blur-sm text-slate-200">
-              <span className="text-amber-gold font-bold">1000+</span> Retail Partners
+              <span className="text-amber-gold font-bold">10000+</span> Retail Partners
             </div>
             <div className="px-3 py-1 rounded-xl bg-white/5 border border-white/15 backdrop-blur-sm text-slate-200">
               <span className="text-sunrise-orange font-bold">28+</span> States

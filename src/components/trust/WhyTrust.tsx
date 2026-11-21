@@ -83,7 +83,7 @@ export const WhyTrust: React.FC = () => {
         <div className="mt-16 p-8 rounded-3xl bg-gradient-to-r from-deep-navy to-brand-navy border border-amber-gold/25 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-10 w-full lg:w-auto text-center sm:text-left">
             <div>
-              <span className="block font-heading font-black text-3xl sm:text-4xl text-amber-gold">1000+</span>
+              <span className="block font-heading font-black text-3xl sm:text-4xl text-amber-gold">10000+</span>
               <span className="block text-xs uppercase tracking-wider text-slate-300 font-semibold mt-1">Retail Partners</span>
             </div>
             <div>

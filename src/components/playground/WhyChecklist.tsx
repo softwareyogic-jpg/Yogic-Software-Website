@@ -3,7 +3,7 @@ import { Check } from 'lucide-react';
 
 const CHECKLIST_ITEMS = [
   '5 years of experience (since 2021) in EMI management and device security',
-  'Proven network of 1000+ retail partners across India',
+  'Proven network of 10000+ retail partners across India',
   '99% client satisfaction with zero collateral defaults [VERIFY with real survey data]',
   '24/7 expert and AI-powered multi-lingual technical support',
   'Nationwide on-ground sales and service network across 28+ states',
