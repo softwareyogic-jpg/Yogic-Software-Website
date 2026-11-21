@@ -19,11 +19,17 @@ export const StoryReelModal: React.FC<StoryReelModalProps> = ({ isOpen, onClose 
     };
     if (isOpen) {
       window.addEventListener('keydown', handleKeyDown);
+      document.documentElement.style.overflow = 'hidden';
       document.body.style.overflow = 'hidden';
+      document.documentElement.classList.add('modal-open');
+      document.body.classList.add('modal-open');
     }
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
+      document.documentElement.style.overflow = '';
       document.body.style.overflow = '';
+      document.documentElement.classList.remove('modal-open');
+      document.body.classList.remove('modal-open');
     };
   }, [isOpen, onClose]);
 
@@ -35,12 +41,13 @@ export const StoryReelModal: React.FC<StoryReelModalProps> = ({ isOpen, onClose 
       aria-modal="true"
       aria-labelledby="storyreel-title"
       onClick={onClose}
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 md:p-10 bg-midnight/92 backdrop-blur-2xl animate-fade-in"
+      onWheel={(e) => e.stopPropagation()}
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 md:p-10 bg-midnight/92 backdrop-blur-2xl animate-fade-in overscroll-contain overflow-y-auto"
     >
       {/* Outer Modal Container (Stop propagation so clicking inside doesn't close) */}
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-5xl rounded-[28px] sm:rounded-[36px] bg-slate-950 border border-white/20 shadow-[0_25px_100px_rgba(0,0,0,0.9)] overflow-hidden flex flex-col"
+        className="relative w-full max-w-5xl rounded-[28px] sm:rounded-[36px] bg-slate-950 border border-white/20 shadow-[0_25px_100px_rgba(0,0,0,0.9)] overflow-hidden flex flex-col my-auto overscroll-contain"
       >
         {/* Top Header Bar */}
         <div className="flex items-center justify-between px-5 sm:px-7 py-3.5 sm:py-4 border-b border-white/10 bg-gradient-to-r from-midnight via-slate-900 to-midnight">

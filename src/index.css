@@ -20,6 +20,13 @@ html {
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
+/* Modal active background scroll lock for all browsers */
+html.modal-open,
+body.modal-open {
+  overflow: hidden !important;
+  overscroll-behavior: none !important;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;

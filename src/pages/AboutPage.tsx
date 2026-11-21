@@ -535,13 +535,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                   Cybersecurity &amp; Device Protection
                 </h3>
                 <p className="mt-3 text-sm text-slate-600 leading-relaxed">
-                  <strong>Y Commander</strong> provides anti-hacking tools and VPN protection for secure remote work and data transfer. <strong>Mobi Protect</strong> safeguards personal devices with theft recovery, remote lock, remote wipe, anti-virus scanning and real-time alerts.
+                  <strong>Y Commander</strong> provides anti-hacking tools and VPN protection for secure remote work and data transfer. <strong>Mobi Protect</strong> safeguards personal devices with theft recovery, remote lock, remote wipe, anti-virus scanning, and complimentary <strong>1-Year Free YouTube Premium</strong> entertainment access.
                 </p>
               </div>
 
               <div className="mt-5 pt-3 border-t border-sunrise-orange/15 flex items-center gap-1.5 text-xs font-bold text-sunrise-orange">
                 <ShieldAlert className="w-3.5 h-3.5" />
-                <span>Anti-Theft &bull; VPN &bull; Antivirus</span>
+                <span>Anti-Theft &bull; Antivirus &bull; 1-Yr YouTube Premium</span>
               </div>
             </div>
 

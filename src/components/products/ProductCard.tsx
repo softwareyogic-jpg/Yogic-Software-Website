@@ -105,31 +105,64 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onSelect }) =
           </div>
         )}
 
+        {/* Mobi Protect Special Entertainment Highlight Banner */}
+        {product.id === 'mobi-protect' && (
+          <div className="mt-4 p-3 rounded-2xl bg-gradient-to-r from-red-600/15 via-amber-gold/15 to-red-600/5 border border-red-500/40 flex items-center gap-3 shadow-sm">
+            <div className="w-8 h-8 rounded-xl bg-red-600 flex items-center justify-center text-white flex-shrink-0 shadow-sm">
+              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </div>
+            <div className="text-left">
+              <div className="flex items-center gap-1.5">
+                <span className="text-[10px] uppercase tracking-wider text-red-600 font-extrabold leading-none">
+                  Special Entertainment Perk
+                </span>
+                <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse" />
+              </div>
+              <span className="text-xs font-black text-deep-navy">
+                YouTube Premium: <span className="text-red-600 underline decoration-amber-gold underline-offset-2">FREE for 1 Year</span>
+              </span>
+            </div>
+          </div>
+        )}
+
         {/* Highlighted feature chips */}
         <div className="mt-5 flex flex-wrap gap-2">
-          {product.featureGroups[0]?.features.map((feat, idx) => (
-            <span
-              key={idx}
-              className={`text-[11px] font-medium px-2.5 py-1 rounded-lg flex items-center gap-1.5 ${
-                feat.isNew
-                  ? 'bg-gradient-to-r from-sunrise-orange/20 to-amber-gold/20 text-deep-navy font-black border border-sunrise-orange shadow-sm'
-                  : 'bg-slate-100 text-slate-700'
-              }`}
-            >
-              {feat.isNew && <span className="w-1.5 h-1.5 rounded-full bg-sunrise-orange animate-pulse" />}
-              <span>{feat.name}</span>
-              {feat.isNew && (
-                <span className="text-[9px] uppercase px-1 py-0.2 rounded bg-sunrise-orange text-white font-extrabold">
-                  HOT
-                </span>
-              )}
-            </span>
-          ))}
-          {product.featureGroups.flatMap(g => g.features).length > product.featureGroups[0]?.features.length && (
-            <span className="text-[11px] font-medium px-2 py-1 rounded-lg bg-royal-blue/10 text-royal-blue font-semibold">
-              +{product.featureGroups.flatMap(g => g.features).length - product.featureGroups[0]?.features.length} more features
-            </span>
-          )}
+          {(() => {
+            const displayFeatures = product.id === 'mobi-protect'
+              ? (product.featureGroups.find(g => g.groupTitle === 'Anti Theft Safeguards')?.features || product.featureGroups[1]?.features || [])
+              : (product.featureGroups[0]?.features || []);
+            const totalCount = product.featureGroups.flatMap(g => g.features).length;
+
+            return (
+              <>
+                {displayFeatures.map((feat, idx) => (
+                  <span
+                    key={idx}
+                    className={`text-[11px] font-medium px-2.5 py-1 rounded-lg flex items-center gap-1.5 ${
+                      feat.isNew
+                        ? 'bg-gradient-to-r from-sunrise-orange/20 to-amber-gold/20 text-deep-navy font-black border border-sunrise-orange shadow-sm'
+                        : 'bg-slate-100 text-slate-700'
+                    }`}
+                  >
+                    {feat.isNew && <span className="w-1.5 h-1.5 rounded-full bg-sunrise-orange animate-pulse" />}
+                    <span>{feat.name}</span>
+                    {feat.isNew && (
+                      <span className="text-[9px] uppercase px-1 py-0.2 rounded bg-sunrise-orange text-white font-extrabold">
+                        HOT
+                      </span>
+                    )}
+                  </span>
+                ))}
+                {totalCount > displayFeatures.length && (
+                  <span className="text-[11px] font-medium px-2 py-1 rounded-lg bg-royal-blue/10 text-royal-blue font-semibold">
+                    +{totalCount - displayFeatures.length} more features
+                  </span>
+                )}
+              </>
+            );
+          })()}
         </div>
       </div>
 

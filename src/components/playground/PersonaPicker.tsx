@@ -114,7 +114,7 @@ const PERSONA_DATA: Record<
       {
         id: 'mobi-protect',
         name: 'Mobi Protect',
-        benefit: 'Theft recovery, remote wipe, anti-virus scanner, and instant intruder selfies.',
+        benefit: 'Theft recovery, remote wipe, anti-virus scanner, instant intruder selfies, plus 1 Year Free YouTube Premium.',
         logo: '/assets/logos/mobi-protect.png',
         badge: 'Personal Shield',
         accent: 'border-emerald-400/60 shadow-emerald-400/20',

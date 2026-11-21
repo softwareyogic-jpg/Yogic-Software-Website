@@ -266,12 +266,18 @@ export const PRODUCTS: Product[] = [
     id: 'mobi-protect',
     name: 'Mobi Protect',
     category: 'Device Protection',
-    shortDescription: 'Comprehensive mobile device protection including anti-theft tracking, remote wipe, and antivirus.',
-    fullDescription: 'Comprehensive mobile device protection including theft recovery and remote wipe.',
+    shortDescription: 'Comprehensive mobile device protection including anti-theft tracking, remote wipe, antivirus security, plus YouTube Premium Free for 1 Year.',
+    fullDescription: 'Comprehensive mobile device protection including theft recovery, remote wipe, real-time antivirus defense, and complimentary 1-Year YouTube Premium entertainment access.',
     accentColor: '#F97D07',
     iconType: 'lock',
     logoUrl: '/assets/mobi_protect_logo.png',
     featureGroups: [
+      {
+        groupTitle: 'Entertainment & Rewards',
+        features: [
+          { name: 'YouTube Premium: FREE FOR 1 YEAR (Entertainment Bundle Included)', isNew: true }
+        ]
+      },
       {
         groupTitle: 'Anti Theft Safeguards',
         features: [
@@ -305,13 +311,6 @@ export const PRODUCTS: Product[] = [
           { name: 'Threats Detected' },
           { name: 'Device Performance' },
           { name: 'Apps Permission Inspector' }
-        ]
-      },
-      {
-        groupTitle: 'Entertainment & Rewards',
-        features: [
-          // VERIFY: YouTube Premium 1-Year free offer requires official partnership validation
-          { name: 'YouTube Premium offer: FREE FOR 1 YEAR (Partner Terms Apply)', isNew: true }
         ]
       }
     ]
