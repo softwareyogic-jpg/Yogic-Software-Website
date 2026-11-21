@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --royal-blue: #0A6BDB;
+  --deep-navy: #0B2A5B;
+  --brand-navy: #16396F;
+  --midnight: #071633;
+  --sunrise-orange: #F97D07;
+  --amber-gold: #EDB90A;
+  --sun-yellow: #FFD60A;
+  --ink: #0A0F1C;
+  --cloud: #F6F9FF;
+  --white: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F9FF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+  border: 2px solid #F6F9FF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Focus rings for accessibility */
+*:focus-visible {
+  outline: 2px solid #0A6BDB;
+  outline-offset: 2px;
+}
+
+/* Glassmorphism helpers */
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(22, 57, 111, 0.08);
+}
+
+.glass-panel-dark {
+  background: rgba(11, 42, 91, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(237, 185, 10, 0.15);
+}
+
+.gold-hairline {
+  border: 1px solid rgba(237, 185, 10, 0.28);
+}
+
+.blue-hairline {
+  border: 1px solid rgba(10, 107, 219, 0.2);
+}
+
+/* Background patterns */
+.bg-grid-subtle {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(10, 107, 219, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(10, 107, 219, 0.04) 1px, transparent 1px);
+}
+
+.bg-dots-dark {
+  background-size: 28px 28px;
+  background-image: radial-gradient(circle, rgba(237, 185, 10, 0.12) 1.5px, transparent 1.5px);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
